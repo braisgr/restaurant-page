@@ -1,7 +1,6 @@
 function render(){
-  //Limpiamos el contenido del elemento content
   const content = document.getElementById("content");
-  content.textContent = "";
+  content.textContent= "";
 
   //Creamos el container del home y lo añadimos al content
   const home = document.createElement("div");
@@ -19,6 +18,7 @@ function render(){
   quote.textContent = "Crafted with passion, served with love – your journey to the perfect cup starts here.";
   hero.appendChild(quote);
   const button = document.createElement("button");
+  button.id = "hero-button";
   button.textContent = "Order Now";
   hero.appendChild(button);
 }
