@@ -97,7 +97,8 @@ nav>button:hover{
   font-size: 1.3rem;
 }
 
-.hero>button{
+.hero>button,
+.contact-card>form button{
   padding: 0.6rem 1.4rem;
   font-size: 1.5rem;
   font-family: inherit;
@@ -111,7 +112,8 @@ nav>button:hover{
   margin: 1rem 0;
 }
 
-.hero>button:hover{
+.hero>button:hover,
+.contact-card>form button:hover{
   background-color: var(--dark-red);
 }
 
@@ -150,4 +152,58 @@ nav>button:hover{
 .card-name{
   display: flex;
   justify-content: space-between;
+}
+
+/* CONTACT PAGE */
+.contact{
+  background-color: var(--soft-brown);
+  height: 87vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+  padding-top: 2rem;
+}
+
+.contact>h2{
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: var(--coffee);
+}
+
+.contact-card{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1.5rem;
+  background-color: var(--coffee);
+  width: 60%;
+  padding: 3rem 4rem;
+  border-radius: 12px;
+}
+
+.contact-card>form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  align-items: center;
+}
+
+.contact-card>form input{
+  border: none;
+  border-radius: 6px;
+  width: 70%;
+  height: 1.5rem;
+}
+
+.contact-card>form textarea{
+  border: none;
+  resize: none;
+  width: 70%;
+  height: 25%;
+}
+
+.contact-card>iframe{
+  width: 100%;
 }
